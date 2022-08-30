@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ExpenseMgnMobileApi.Views.AddExpense">
+
+
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <StackLayout >
+
+                    <StackLayout HorizontalOptions="FillAndExpand" HeightRequest="200" BackgroundColor="#007AFF" >
+                        <Frame HasShadow="True" BackgroundColor="Transparent">
+
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal" >
+                                    
+                                    <Label IsVisible="False"  x:Name="lbid" HorizontalOptions="EndAndExpand"  TextColor="White" FontAttributes="Bold" FontSize="16" ></Label>
+
+                                </StackLayout>
+
+                              
+                                
+                                
+                                
+                                
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+
+                    <StackLayout Padding="20">
+                        <StackLayout>
+
+
+
+                         
+                                <Picker Title="Categories"
+                                    x:Name="Category"
+                                       >
+                                    <Picker.Items >
+                                        <x:String>Food</x:String>
+                                        <x:String>Clothing</x:String>
+                                        <x:String>Fruits</x:String>
+                                        <x:String>Shopping</x:String>
+                                        <x:String>Tranport</x:String>
+                                        <x:String>Travel</x:String>
+                                        <x:String>Other</x:String>
+                                    </Picker.Items>
+                                </Picker>
+                          
+
+
+                         
+
+                                <Entry x:Name="Amount" Text="{Binding Amount}" Placeholder="Amount"></Entry>
+                                                          
+                            
+                                
+                       
+
+                                <DatePicker 
+                                 Format="d" 
+                                 x:Name="Datepicker"
+                                 
+                                  
+                                               >
+
+                                </DatePicker>
+                     
+                       
+                                <TimePicker  
+                                 Format="t" 
+                                 x:Name="Timepicker" 
+                                    >
+
+                                </TimePicker>
+                 
+                      
+                                <Picker Title="Type"
+                                    x:Name="Typepicker" 
+                                     
+                                        >
+                                    <Picker.Items >
+                                        <x:String>InCome</x:String>
+                                        <x:String>Expense</x:String>
+                                  
+                                    </Picker.Items>
+                                </Picker>
+                  
+
+
+                           
+
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="FillAndExpand" Padding="20">
+                        <Button Clicked="btnAdd"  HorizontalOptions="FillAndExpand" CornerRadius="10"  HeightRequest="80" FontSize="16" Text="Submit"  TextColor="White" BackgroundColor="#007AFF"/>
+                    </StackLayout>
+
+                </StackLayout>
+               
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
