@@ -11,15 +11,9 @@ namespace ExpenseMgnMobileApi.Services
 
       Task<bool> Create(MExpense e);
       Task<bool> Update(MExpense e);
-
-
-         Task<bool> Delete(int id);
-
-
-         Task<MExpense> GetById(int id);
-
-
-         Task<List<MExpense>> GetAll();
+      Task<bool> Delete(int id);
+      Task<MExpense> GetById(int id);
+      Task<List<MExpense>> GetAll();
         
 
 
