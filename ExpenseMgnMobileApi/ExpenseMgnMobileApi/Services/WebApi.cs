@@ -12,7 +12,7 @@ namespace ExpenseMgnMobileApi.Services
     public class WebApi : IWebApiRepository
     {
         HttpClient client = new HttpClient();
-        string url = "http://10.0.2.2:7178/";
+        string url = "http://10.0.2.2:5178/";
         public WebApi()
         {
             client= new HttpClient();
