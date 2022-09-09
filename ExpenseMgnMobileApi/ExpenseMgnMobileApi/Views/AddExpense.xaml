@@ -18,6 +18,7 @@
                                     
                                     <Label IsVisible="False"  x:Name="lbid" HorizontalOptions="EndAndExpand"  TextColor="White" FontAttributes="Bold" FontSize="16" ></Label>
                                     <Label Text="Welcome" FontSize="46" HorizontalOptions="Start"  FontAttributes="Bold" TextColor="White"></Label>
+                                    <Label Text="To" FontSize="46" HorizontalOptions="Start"  FontAttributes="Bold" TextColor="White"></Label>
                                     <Label Text="My Expense Manager" FontSize="35" HorizontalOptions="Start"  FontAttributes="Bold" TextColor="White"></Label>
                                 </StackLayout>
 
